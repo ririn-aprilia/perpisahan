@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Surat Untukmu 💙</title>
+
+    <link rel="stylesheet" href="surat.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BACKGROUND DECORATION
+    ========================== -->
+
+    <div class="cloud cloud-1">☁️</div>
+    <div class="cloud cloud-2">☁️</div>
+    <div class="cloud cloud-3">☁️</div>
+
+    <!-- Love -->
+    <div class="love love-1">♡</div>
+    <div class="love love-2">♥</div>
+    <div class="love love-3">♡</div>
+    <div class="love love-4">♥</div>
+    <div class="love love-5">♡</div>
+
+    <!-- Bintang -->
+    <div class="star star-1">✦</div>
+    <div class="star star-2">✧</div>
+    <div class="star star-3">✦</div>
+    <div class="star star-4">✧</div>
+    <div class="star star-5">✦</div>
+
+    <!-- =========================
+         ISI HALAMAN
+    ========================== -->
+
+    <main class="page">
+
+        <!-- Judul kecil -->
+        <div class="top-title">
+            <span>♡</span>
+            sebuah surat kecil
+            <span>♡</span>
+        </div>
+
+
+        <!-- =========================
+             SURAT
+        ========================== -->
+
+        <section class="letter">
+
+            <!-- Hiasan atas surat -->
+            <div class="letter-decoration">
+                <span>✦</span>
+                <span>♡</span>
+                <span>✦</span>
+            </div>
+
+
+            <!-- FOTO -->
+            <div class="photo-container">
+
+                <img src="fotbar.jpg" alt="Foto">
+                <div class="photo-heart">♡</div>
+
+            </div>
+
+
+            <!-- ISI SURAT -->
+
+            <div class="letter-content">
+
+                <p class="greeting">
+                   Untuk para pembimbingku💙
+                </p>
+
+                <p>
+                    Selamat pagi/siang/sore/malem...
+                </p>
+
+                <p>
+                  Hallo aa, teteh, bapa
+kalo kalian baca surat ini berati aku udah selesai PKL nya😁
+
+                </p>
+
+                <p>
+                    Pengalaman PKL di hotel sanyrosa dengan 
+                    teman teman se ruangan yang se asik kalian, 
+                    se humoris kalian, se baik kalian, itu bakal jadi kenangan yang ga akan pernah aku lupain❤️‍🩹.
+                </p>
+
+                <p>
+                    
+Teh nisa, A herdy, 
+A dwi, Pa hery. kalian sehat selalu ya, sukses selalu dalam pekerjaannya.
+
+Ilmu yang kalian kasih ke aku selama PKL bakal aku simpen 
+dan ingat selamanya. 
+
+                </p>
+
+                <p>
+                   walaupun sempet down aku karena ngga sesuai
+                    dengan jurusan aku, tapi aku lama lama jadi mikir kalo ini adalah ilmu baru buat aku, aku dapet ilmu accounting tapi
+                    ngga melepaskan juga ilmu RPL aku di sekolah.
+                </p>
+
+                <p>aa teteh pa,
+                     doain ya aku bisa masuk kampus impian aku ITB hehe
+                     aku mau jadi web developer🤭
+                </p>
+
+                 <p> sama foto di atas juga aku edit soalnya gapunya fotbar hehe</p>
+
+                <p class="closing">
+                   see you next time
+                    <br>
+                    Semoga kalian selalu bahagia. 💙
+                </p>
+
+                <div class="signature">
+                    <span>♡</span>
+                    <strong>Dibuat Oleh: Ririn Apriliani</strong>
+                </div>
+
+            </div>
+
+
+            <!-- Hiasan bawah surat -->
+
+            <div class="letter-bottom">
+                <span>♡</span>
+                <span>✦</span>
+                <span>♡</span>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MUSIC
+        ========================== -->
+
+        <div class="music-section">
+
+            <p class="music-title">
+                ♫ ini cocok di dengerin sambil baca surat dari aku ♫
+            </p>
+
+            <div class="music-player">
+
+                <div class="music-icon">
+                    ♫
+                </div>
+
+                <div class="music-info">
+                    <span>Bersenja Gurau</span>
+                    <small>for u ♡</small>
+                </div>
+
+                <button id="musicButton">
+                    ▶
+                </button>
+
+            </div>
+
+            <audio id="music">
+                <source src="music.mp3" type="audio/mpeg">
+            </audio>
+
+        </div>
+
+
+        <!-- Footer kecil -->
+
+        <div class="footer">
+            made with ♡
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         JAVASCRIPT MUSIC
+    ========================== -->
+
+    <script>
+
+        const music = document.getElementById("music");
+        const musicButton = document.getElementById("musicButton");
+
+        musicButton.addEventListener("click", function () {
+
+            if (music.paused) {
+
+                music.play();
+
+                musicButton.innerHTML = "❚❚";
+
+            } else {
+
+                music.pause();
+
+                musicButton.innerHTML = "▶";
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
